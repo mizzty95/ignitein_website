@@ -6,6 +6,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ProjectTabsComponent } from './components/project-tabs/project-tabs.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -17,6 +19,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     GalleryComponent,
     AboutComponent,
     ProjectsComponent,
+    ServicesComponent,
+    ProjectTabsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

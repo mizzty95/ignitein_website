@@ -6,3 +6,7 @@
   height: 70px;
   width: 70px;
 }
+
+#nav-main ul li {
+  margin-left: 100px !important; /* Space between the menu items */
+}

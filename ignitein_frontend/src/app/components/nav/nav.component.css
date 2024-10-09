@@ -10,3 +10,12 @@
 #nav-main ul li {
   margin-left: 100px !important; /* Space between the menu items */
 }
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* Ensure the header has a background color */
+  /* Ensure the header has a background color */
+}

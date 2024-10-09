@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#banner-content {
+  padding-left: 180px;
+}
+
+.banner-image {
+  padding-right: 120px !important;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header:hover .rotating {
+  animation: rotate 2s linear 1;
+}

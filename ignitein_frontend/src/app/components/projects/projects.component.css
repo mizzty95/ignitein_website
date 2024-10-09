@@ -1,15 +1,24 @@
 .card {
-  border: 1px solid #4f4c4c;
   padding: 20px;
   margin: 20px auto;
-  color: #000;
+  color: #333;
   max-width: 350px;
-  box-shadow: 2px 0px 3px rgba(128, 127, 127, 0.24);
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 0px 3px rgba(128, 127, 127, 0.24);
+  background: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: normal;
+  width: 100%;
 }
 .card:hover {
   transform: translateY(-4px);
+  box-shadow: 0px 0px 10px rgba(210, 179, 86, 0.3);
 }
+
+.card:hover h5 {
+  color: #d2b356;
+}
+
 .card-views {
   float: right;
 }
@@ -19,12 +28,9 @@
   object-fit: cover;
 }
 
-h5 {
-  color: #d2b356;
-  font-family: "Press Start 2P", cursive;
+.card h5 {
   font-size: 20px;
-}
-.last-updated {
-  bottom: 5px;
-  position: absolute;
+  font-weight: bold;
+  color: black; /* Dark black before hovering */
+  transition: color 0.2s ease-in-out;
 }

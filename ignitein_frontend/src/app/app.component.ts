@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -29,6 +29,7 @@ import { ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
 export class AppComponent implements AfterViewInit {
   title = 'ignitein_frontend';
   isSticky: boolean = false;
+  isStickyAfter: boolean = false;
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   ngAfterViewInit(): void {
@@ -40,5 +41,14 @@ export class AppComponent implements AfterViewInit {
     });
 
     navObserver.observe(scrollWatcher); // Start observing the scroll watcher
+  }
+  // Listen to the window's scroll event
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(): void {
+    if (this.isSticky) {
+      this.isStickyAfter = true; // Add the sticky-active class when scrolling past the sticky element
+    } else {
+      this.isStickyAfter = false; // Remove the sticky-active class when scrolling back up
+    }
   }
 }

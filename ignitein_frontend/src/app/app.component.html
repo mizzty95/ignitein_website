@@ -1,6 +1,9 @@
 <!--Main Content Area-->
 <main id="content">
-  <app-nav [class.sticking]="isSticky"></app-nav>
+  <app-nav
+    [class.sticking-after]="isStickyAfter"
+    [class.sticking]="isSticky"
+  ></app-nav>
   <app-header id="primary-header"></app-header>
   <app-services></app-services>
   <app-project-tabs></app-project-tabs>

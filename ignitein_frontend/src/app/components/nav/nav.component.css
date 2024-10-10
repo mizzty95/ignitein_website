@@ -1,21 +1,56 @@
-#navigation-logo {
-  height: 70px !important;
-  width: 100% !important;
-}
-#logo {
-  height: 70px;
-  width: 70px;
-}
-
-#nav-main ul li {
-  margin-left: 100px !important; /* Space between the menu items */
-}
-
-#header {
-  position: sticky;
+/* General Styles for the Nav Bar */
+.nav-bar {
+  display: flex; /* Use Flexbox to align items in a row */
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center; /* Vertically center items */
+  width: 100%; /* Make the navbar span the full width of the screen */
+  background-color: white; /* Set background color */
+  padding: 0 20px; /* Add some padding to the left and right for spacing */
+  max-height: 80px;
   top: 0;
-  z-index: 1000;
+}
 
-  /* Ensure the header has a background color */
-  /* Ensure the header has a background color */
+/* Logo section */
+.nav-img {
+  height: 100%;
+  flex: 0 0 20%; /* The logo section takes 20% of the width */
+  display: flex; /* Use flex to center the logo */
+  justify-content: center; /* Center the logo horizontally */
+  max-height: 80px;
+}
+
+.nav-img img {
+  height: auto; /* Limit the height of the logo */
+  width: auto; /* Maintain the aspect ratio of the logo */
+  max-height: 80px;
+}
+
+/* Navigation links section */
+.nav-links {
+  flex: 1; /* The navigation links section takes up the remaining 80% */
+  display: flex; /* Use flex to align the links */
+  justify-content: space-around; /* Distribute links evenly with space around */
+}
+
+.nav-links ul {
+  display: flex; /* Use flex to align links horizontally */
+  list-style: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin: 0; /* Remove any default margin on list items */
+}
+
+.nav-links ul li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: black; /* Set the link color to black */
+  font-size: 16px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links ul li a:hover {
+  color: #007bff; /* Change color when hovered */
 }

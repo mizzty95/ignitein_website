@@ -508,7 +508,6 @@ section {
 #header.nav-solid {
     background: #fff;
     /* box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2); */
-    position: fixed !important;
     left:0;
 }
 

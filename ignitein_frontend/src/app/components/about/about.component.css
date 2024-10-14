@@ -1,0 +1,16 @@
+/* Ensure the image is responsive */
+.responsive-image {
+  width: 50%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 20%; /* Set a max width to keep the image small */
+  /* Center the image */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 100px;
+    border-radius: 80%; /* Allow full width on smaller screens */
+  }
+}
